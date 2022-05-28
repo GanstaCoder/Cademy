@@ -9,14 +9,13 @@ For lists, methods will follow the form of list_name.method(). Some methods will
 An example of a popular list method is .append(), which allows us to add an element to the end of a list.
 """
 
-
 example_list = [1, 2, 3, 4]
 
-#Using Append
+# Using Append
 example_list.append(5)
 print(example_list)
 
-#Using Remove
+# Using Remove
 example_list.remove(5)
 print(example_list)
 
@@ -61,7 +60,6 @@ orders.append("roses")
 print(orders)
 
 print(orders)
-
 
 # example 2
 orders = ["daisy", "buttercup", "snapdragon", "gardenia", "lily"]
@@ -131,15 +129,11 @@ In the line of code that you pasted, change 8 to an index that exists so that yo
 Run your code again!
 """
 
-
-
 employees = ["Michael", "Dwight", "Jim", "Pam", "Ryan", "Andy", "Robert"]
 
 employee_four = employees[3]
 print(employees[4])
 print(employees[6])
-
-
 
 shopping_list = ["eggs", "butter", "milk", "cucumbers", "juice", "cereal"]
 
@@ -148,7 +142,6 @@ print(shopping_list[-1])
 
 index5_element = shopping_list[5]
 print(shopping_list[5])
-
 
 # Your code below:
 order_list = ["Celery", "Orange Juice", "Orange", "Flatbread"]
@@ -163,6 +156,61 @@ print(new_store_order_list)
 new_store_order_list.remove("Mango")
 print(new_store_order_list)
 
-#Broken
+# Broken
 new_store_order_list.remove("Onions")
 print(new_store_order_list)
+
+# Your code below:
+class_name_test = [["Jenny", 90],
+                   ["Alexus", 85.5],
+                   ["Sam", 83],
+                   ["Ellie", 101.5]
+                   ]
+print(class_name_test)
+sams_score = class_name_test[2][1]
+print(sams_score)
+
+ellies_score = class_name_test[-1][-1]
+print(ellies_score)
+
+# TEST
+last_semester_gradebook = [["politics", 80], ["latin", 96], ["dance", 97], ["architecture", 65]]
+
+# Your code below:
+subjects = [
+    "physics",
+    "calculus",
+    "poetry",
+    "history"
+]
+
+grades = [
+    98,
+    97,
+    85,
+    88
+]
+
+gradebook = [
+    ["physics", 98],
+    ["calculus", 97],
+    ["poetry", 85],
+    ["history", 88]
+]
+
+# print(gradebook)
+
+gradebook.append(["computer science", 100])
+# print(gradebook)
+gradebook.append(["visual arts", 93])
+# print(gradebook)
+gradebook[-1][-1] = 98
+# print(gradebook)
+gradebook.remove(["poetry", 85])
+# print(gradebook)
+
+gradebook.append(["poetry", "Pass"])
+# print(gradebook)
+
+full_gradebook = last_semester_gradebook + gradebook
+print(full_gradebook)
